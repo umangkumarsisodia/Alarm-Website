@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Alarm</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="img/clock.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <img class="clockImage" src="img/clock.png" alt="clock image">
+        <h1 id="heading">My Alarm</h1>
+        <img class="clockImage" src="img/clock.png" alt="clock image">
+    </div>
+    <h2>Set Alarm Here</h2>
+    <div class="alarmForm">
+        <div>
+            <select id="aHour" class="select"></select>
+        </div>
+        <p>:</p>
+        <div>
+            <select id="aMin" class="select"></select>
+        </div>
+        <p>:</p>
+        <div>
+            <select id="aSec" class="select"></select>
+        </div>
+        <div>
+            <select id="aAMPM" class="select">
+                <option value="am">AM</option>
+                <option value="pm">PM</option>
+            </select>
+        </div>
+        <button class="alarmBtn" id="btn" onclick="setAlarm()">Set Alarm</button>
+        <button class="alarmBtn" id="btn2" onclick="resetAlarm()">Reset Alarm</button>
+    </div>
+    <div class="main">
+        <div class="clock">
+            <h1>Time</h1>
+            <div class="card">
+                <div id="cHour"></div>
+                :
+                <div id="cMin"></div>
+                :
+                <div id="cSec"></div>
+                <div id="ampm"></div>
+            </div>
+            <div class="mid">
+                <div id="alarmTime"></div>
+                <img id="bell" src="img/bell.png" alt="bell image">
+            </div>
+            <div class="time">
+                <div id="day"></div>
+                <div id="date"></div>
+                /
+                <div id="month"></div>
+                /
+                <div id="year"></div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
